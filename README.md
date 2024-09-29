@@ -143,3 +143,14 @@ for state management , this architecture uses redux saga
 - use of lazy loading
 
 - using memoization concepts
+
+# How to run the project on system
+* open a cmd line on the root directory
+
+* run `npm install`
+
+* run `npm run dev` 
+
+# Setup for a React+Typescript project:
+
+## this project is created on a following node(v14.21.1) and npm(6.14.17) version
