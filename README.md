@@ -1,6 +1,6 @@
 # Architecture Overview
 
-this actuchecture will be used across multiple web projects, it contains eslint, prettier, jest, react-router, redux-saga.
+this architecture will be used across multiple web projects, it contains eslint, prettier, jest, react-router, redux-saga.
 
 # Main project structure
 
@@ -59,13 +59,13 @@ tsconfig.node.json
 
 vite.config.ts
 
-# redux folder structure
+# Redux folder structure
 
 actions
 
 - index.ts (**all actions can be exported here**)
 
-- productDataActions.ts (**product related actions are declared here, will bee triggered by dispatch further**)
+- productDataActions.ts (**product related actions are declared here, will be triggered by dispatch further**)
 
 reducers
 
@@ -91,7 +91,7 @@ types
 
 store.ts (**store configuration**)
 
-# elements structure inside pages or components folder
+# Elements structure inside pages or components folder
 
 index.tsx (**entry point**)
 
@@ -110,3 +110,36 @@ test
 - test file 
 
 - snapshots
+
+## Naming conventions for styling
+
+https://getbem.com/introduction/
+
+for example:
+> container
+
+> container__button
+
+> container__button--disabled
+
+
+## UI Components
+
+shared UI components (e.g., buttons, forms, modals) can be placed inside components folder, they can be further customized by passing props
+
+## Utilities
+
+- error handling can be solved by using error boundaries, try/catch block under generator functions
+- utility/helper functions can be created to define structure of call like for get methods (**src/redux/sagas/utils/getCallWithCustomHeaders.ts**)
+
+## State management
+
+for state management , this architecture uses redux saga
+
+## Best practices
+
+- use of error boundaries
+
+- use of lazy loading
+
+- using memoization concepts
