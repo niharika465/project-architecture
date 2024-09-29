@@ -1,0 +1,15 @@
+@import '@/_colors'; // Use the @ alias to reference the colors folder
+
+.card {
+    width: 250px;
+    height: 350px;
+    border: 1px solid $border-color;
+    padding: 10px;
+    background-color: $white;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &__name {
+        max-height: 90px;
+    }
+}

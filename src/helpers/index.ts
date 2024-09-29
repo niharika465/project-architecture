@@ -1,0 +1,1 @@
+export { capitalizeFirstLetterOfEachWord } from './capitalizeFirstLetterOfEachWord';

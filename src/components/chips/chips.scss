@@ -1,0 +1,16 @@
+@import '@/_colors'; // Use the @ alias to reference the colors folder
+
+.chips {
+    border: 1px solid $border-color;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: $black;
+
+    &--green {
+        background-color: $green;
+    }
+
+    &--orange {
+        background-color: $orange;
+    }
+}
